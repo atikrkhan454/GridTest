@@ -26,7 +26,7 @@ public class LoginOnWindowsChrome {
         cap.setPlatform(Platform.WIN10);
         driver = new RemoteWebDriver(new URL(nodeURL),cap);
         driver.get("http://practice.automationtesting.in/my-account/");
-       // driver.manage().window().maximize();
+        driver.manage().window().maximize();
         driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
